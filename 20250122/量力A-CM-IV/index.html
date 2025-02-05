@@ -12,7 +12,7 @@
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":50};</script>
   
   <title>
-    关于 |
+    量力A-CM(IV) |
     
     玖菜的笔记
   </title>
@@ -27,19 +27,18 @@
 
   
   
-    <meta name="description" content="关于 随便写点">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="https://bychv.github.io/about/index.html">
+    <meta name="description" content="$$\require{ams} \newcommand{\d}{\mathrm{d}} \newcommand{\i}{\mathrm{i}} \newcommand{\oiint}{\subset\kern{-3pt}\supset\kern{-16.5pt}\iint} $$ Gauge(Transform) Invariance $$\left\{ \begin{aligned} \bold">
+<meta property="og:type" content="article">
+<meta property="og:title" content="量力A-CM(IV)">
+<meta property="og:url" content="https://bychv.github.io/20250122/%E9%87%8F%E5%8A%9BA-CM-IV/index.html">
 <meta property="og:site_name" content="玖菜的笔记">
-<meta property="og:description" content="关于 随便写点">
+<meta property="og:description" content="$$\require{ams} \newcommand{\d}{\mathrm{d}} \newcommand{\i}{\mathrm{i}} \newcommand{\oiint}{\subset\kern{-3pt}\supset\kern{-16.5pt}\iint} $$ Gauge(Transform) Invariance $$\left\{ \begin{aligned} \bold">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://bychv.github.io/images/banner.webp">
-<meta property="article:published_time" content="2025-01-04T08:59:13.915Z">
-<meta property="article:modified_time" content="2025-01-04T08:59:13.915Z">
+<meta property="article:published_time" content="2025-01-22T06:15:05.000Z">
+<meta property="article:modified_time" content="2025-01-22T08:26:38.688Z">
 <meta property="article:author" content="玖菜">
+<meta property="article:tag" content="量子力学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://bychv.github.io/images/banner.webp">
   
   
     <link rel="alternate" href="/atom.xml" title="玖菜的笔记" type="application/atom+xml">
@@ -167,7 +166,7 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="/images/banner16.jpg" alt="关于">
+      <img fetchpriority="high" src="/images/banner16.jpg" alt="量力A-CM(IV)">
     
   
   <div id="header-outer">
@@ -176,7 +175,7 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">关于</h1>
+            <h1 data-aos="slide-up">量力A-CM(IV)</h1>
           </a>
         
       
@@ -195,10 +194,19 @@
             <aside id="sidebar">
   
   
-  <div class="sidebar-wrapper ">
+  <div class="sidebar-wrapper wrap-sticky">
     <div class="sidebar-wrap" data-aos="fade-up">
       
-        <div class="sidebar-author">
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gaugetransform-invariance"><span class="toc-number">1.</span> <span class="toc-text"> Gauge(Transform) Invariance</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#gauge-coloumb-gauge"><span class="toc-number">1.1.</span> <span class="toc-text"> Gauge: Coloumb Gauge</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gauge-lorenz-gauge"><span class="toc-number">1.2.</span> <span class="toc-text"> Gauge: Lorenz Gauge</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#multipole-expansion"><span class="toc-number">2.</span> <span class="toc-text"> Multipole Expansion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#canonical-quantization"><span class="toc-number">3.</span> <span class="toc-text"> Canonical Quantization</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#properties-of-boldsymbole_ijk"><span class="toc-number">4.</span> <span class="toc-text"> Properties of $\boldsymbol{e}_{i,j,k}$</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="玖菜" class="lazyload">
   <div class="sidebar-author-name">玖菜</div>
   <div class="sidebar-description"></div>
@@ -257,8 +265,13 @@
     
   
 </div>
-
+</div>
       
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
       
     </div>
   </div>
@@ -269,17 +282,21 @@
 </aside>
 
           
-          <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main"><article id="post-量力A-CM-IV" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner" data-aos="fade-up">
     <div class="article-meta">
       <div class="article-date">
-  <a href="/about/index.html" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2025-01-04T08:59:13.915Z" itemprop="datePublished">2025-01-04</time>
-    <time style="display: none;" id="post-update-time">2025-01-04</time>
+  <a href="/20250122/%E9%87%8F%E5%8A%9BA-CM-IV/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-01-22T06:15:05.000Z" itemprop="datePublished">2025-01-22</time>
+    <time style="display: none;" id="post-update-time">2025-01-22</time>
   </a>
 </div>
 
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" data-aos="zoom-in">量子力学</a>
+  </div>
+
 
     </div>
     <div class="hr-line"></div>
@@ -288,9 +305,61 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
       
-        <h2 id="关于"><a class="markdownIt-Anchor" href="#关于"></a> 关于</h2>
-<p>随便写点</p>
-
+        <p>$$\require{ams}
+\newcommand{\d}{\mathrm{d}}
+\newcommand{\i}{\mathrm{i}}
+\newcommand{\oiint}{\subset\kern{-3pt}\supset\kern{-16.5pt}\iint}
+$$</p><h1 id="gaugetransform-invariance"><a class="markdownIt-Anchor" href="#gaugetransform-invariance"></a> Gauge(Transform) Invariance</h1>
+<p>$$\left\{ \begin{aligned}
+\boldsymbol{A}&#39;&amp;&#x3D;\boldsymbol{A}+\nabla\chi\\
+\phi&#39;&amp;&#x3D;\phi-\frac{1}{c}\frac{\partial\chi}{\partial t}
+\end{aligned} \right.
+$$</p><p>$$ \begin{aligned}
+  \boldsymbol{E}&#39;&amp;&#x3D;-\nabla\phi&#39;-\frac{1}{c}\frac{\partial\boldsymbol{A}&#39;}{\partial t} \\
+  &amp;&#x3D;-\nabla\bigg(\phi-\frac{1}{c}\frac{\partial\chi}{\partial t}\bigg)-\frac{1}{c}\frac{\partial}{\partial t}(\boldsymbol{A}+\nabla\chi)\\
+  &amp;&#x3D;-\nabla\phi+\frac{1}{c}\frac{\partial\chi}{\partial t}-\frac{1}{c}\frac{\partial\boldsymbol{A}}{\partial t}-\nabla\bigg(\frac{1}{c}\frac{\partial\chi}{\partial t}\bigg)\\
+    &amp;&#x3D;-\nabla\phi-\frac{1}{c}\frac{\partial\boldsymbol{A}}{\partial t}\\
+    &amp;&#x3D;\boldsymbol{E}
+\end{aligned}
+$$</p><p>After the gauge transformation, the electric field remains the same.</p>
+<p>$$\boldsymbol{B}&#39;&#x3D;\nabla\times(\boldsymbol{A}+\nabla\chi)&#x3D;\nabla\times\boldsymbol{A}&#x3D;\boldsymbol{B}
+$$</p><p>The magnetic field remains the same after the gauge transformation.</p>
+<h2 id="gauge-coloumb-gauge"><a class="markdownIt-Anchor" href="#gauge-coloumb-gauge"></a> Gauge: Coloumb Gauge</h2>
+<p>$$\nabla\cdot\boldsymbol{A}&#x3D;0 
+$$</p><p>and $ \phi&#x3D;0 $,call radiation gauge.</p>
+<h2 id="gauge-lorenz-gauge"><a class="markdownIt-Anchor" href="#gauge-lorenz-gauge"></a> Gauge: Lorenz Gauge</h2>
+<p>$$\nabla\cdot\boldsymbol{A}+\frac{1}{c^2}\frac{\partial\phi}{\partial t}&#x3D;0 
+$$</p><h1 id="multipole-expansion"><a class="markdownIt-Anchor" href="#multipole-expansion"></a> Multipole Expansion</h1>
+<p>$$W_e&#x3D;-\boldsymbol{d}\cdot\boldsymbol{E}
+$$</p><p>d is the eletric-dipole moment.</p>
+<p>$$\boldsymbol{d}&#x3D;q\boldsymbol{x}
+$$</p><p>$$W_m&#x3D;-\boldsymbol{\mu}\cdot\boldsymbol{B}
+$$</p><p>$$\boldsymbol{\mu}&#x3D;\frac{q\boldsymbol{L}}{2mc}
+$$</p><h1 id="canonical-quantization"><a class="markdownIt-Anchor" href="#canonical-quantization"></a> Canonical Quantization</h1>
+<p>a) Viraable: cannonical<br />
+position $\boldsymbol{x}$, momentum $\boldsymbol{p}$</p>
+<p>$$A(\boldsymbol{x},\boldsymbol{p})\to\hat{A}(\hat{x},\hat{q}) 
+$$</p><p>b) Commutation relation<br />
+CM:</p>
+<p>$$\begin{align}
+    [x_i,p_j]_{PB}&amp;&#x3D;\delta_{ij} \\
+    [x_i,x_j]_{PB}&amp;&#x3D;[p_i,p_j]_{PB}&#x3D;0  
+\end{align}
+$$</p><p>QM:</p>
+<p>$$\begin{align}
+    [\hat{x}_i,\hat{p}_j]&amp;&#x3D;\i\hbar\delta_{ij} \\
+    [\hat{x}_i,\hat{x}_j]&amp;&#x3D;[\hat{p}_i,\hat{p}_j]&#x3D;0
+\end{align}
+$$</p><h1 id="properties-of-boldsymbole_ijk"><a class="markdownIt-Anchor" href="#properties-of-boldsymbole_ijk"></a> Properties of $\boldsymbol{e}_{i,j,k}$</h1>
+<ol>
+<li>Othonomality</li>
+</ol>
+<p>$$\boldsymbol{e}_i\cdot\boldsymbol{e}_j&#x3D;\delta_{ij} 
+$$</p><ol start="2">
+<li>Completeness</li>
+</ol>
+<p>$$\sum_{i&#x3D;1}^{3}\boldsymbol{e}_i\boldsymbol{e}_i&#x3D;\mathbb{1}\quad(\text{并矢}) 
+$$</p>
       
     </div>
     <footer class="article-footer">
@@ -302,10 +371,33 @@
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" rel="tag">量子力学</a></li></ul>
+
 
     </footer>
   </div>
   
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="https://st.sinku4erver.com/cover.jpg" data-sizes="auto" alt="量力A-CM(III)" class="lazyload">
+        
+      
+      <a href="/20250121/%E9%87%8F%E5%8A%9BA-CM-III/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          量力A-CM(III)
+        
+      </h3>
+    </div>
+    
+  </nav>
+
 
 </article>
 
@@ -369,7 +461,16 @@
       <nav id="mobile-nav">
   <div class="sidebar-wrap">
     
-      <div class="sidebar-author">
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gaugetransform-invariance"><span class="toc-number">1.</span> <span class="toc-text"> Gauge(Transform) Invariance</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#gauge-coloumb-gauge"><span class="toc-number">1.1.</span> <span class="toc-text"> Gauge: Coloumb Gauge</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gauge-lorenz-gauge"><span class="toc-number">1.2.</span> <span class="toc-text"> Gauge: Lorenz Gauge</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#multipole-expansion"><span class="toc-number">2.</span> <span class="toc-text"> Multipole Expansion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#canonical-quantization"><span class="toc-number">3.</span> <span class="toc-text"> Canonical Quantization</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#properties-of-boldsymbole_ijk"><span class="toc-number">4.</span> <span class="toc-text"> Properties of $\boldsymbol{e}_{i,j,k}$</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="玖菜" class="lazyload">
   <div class="sidebar-author-name">玖菜</div>
   <div class="sidebar-description"></div>
@@ -428,9 +529,14 @@
     
   
 </div>
-
+</div>
     
   </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
   
 </nav>
 
